@@ -1,15 +1,15 @@
 apiVersion: skaffold/v3alpha1
 kind: Config
 metadata: 
-  name: hello-cloudrun-go
+  name: run-go-skaffold
 profiles:
 - name: dev
   manifests:
     rawYaml:
-    - hello-cloudrun-go-dev.yaml
+    - run-go-dev.yaml
 - name: prod
   manifests:
     rawYaml:
-    - hello-cloudrun-go-prod.yaml
+    - run-go-prod.yaml
 deploy:
   cloudrun: {}
