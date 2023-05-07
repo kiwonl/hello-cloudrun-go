@@ -1,13 +1,33 @@
-Cloud Build 를 사용하여 소스코드로 부터 컨테이너 이미지 빌드 후 저장소(Container Registry)에 저장
-+ Artifact Registry 사용을 권장하나 간단할 설명을 위해 Container Registry 를 사용
+
+# Cloud Run Quick Demo - 1 (컨테이너 이미지로부터 Cloud Run 프로비저닝 하기)
+
+
+# Cloud Run Quick Demo - 2 (소스코드로부터 Cloud Run 프로비저닝 하기, Feat. Cloud Build)
+1. 소스 코드 clone
 ```
-$PROEJCT_ID==[YOUR-PROJECT-ID]
-$gcloud builds submit -t gcr.io/${PROEJCT_ID}/hello-cloudrun-go .
+git clone https://github.com/kiwonl/hello-cloudrun-go && cd hello-cloudrun-go
 ```
 
-+ Container Registry 에 저장된 컨테이너 이미지 확인
+2. "Cloud Build" 로 소스코드 빌드 및 저장소 푸시
 ```
-$gcloud container images list
-NAME
-gcr.io/kwlee-app-eco-sandbox/hello-cloudrun-go
+PROEJCT_ID=[YOUR-PROJECT-ID]
+gcloud builds submit -t gcr.io/${PROEJCT_ID}/hello-cloudrun-go .
+gcloud container images list
 ```
+
+3. "Continuously deploy new revision from a source repository" 를 통해 저장소 연동 후 배포
+
+
+# Cloud Run Quick Demo - 3 (2에서 사용한 소스코드 수정 후 재배포 확인)
+
+# Cloud Run Quick Demo - 4 (Cloud Deploy 를 사용해 여러 환경 배포)
+```
+
+```
+
+
+
+
+
+
+
