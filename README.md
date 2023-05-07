@@ -5,7 +5,7 @@ $PROEJCT_ID==[YOUR-PROJECT-ID]
 $gcloud builds submit -t gcr.io/${PROEJCT_ID}/hello-cloudrun-go .
 ```
 
-+ Container Registry 에 저장된 컨테이너 이미지 확안
++ Container Registry 에 저장된 컨테이너 이미지 확인
 ```
 $gcloud container images list
 NAME
