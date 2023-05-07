@@ -1,7 +1,7 @@
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
-  name: hello-cloudrun-go-dev
+  name: run-go-prod
 spec:
   template:
     spec:
