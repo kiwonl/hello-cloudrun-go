@@ -10,7 +10,6 @@ serialPipeline:
   - targetId: run-qo-prod
     profiles: [prod]
 ---
-
 apiVersion: deploy.cloud.google.com/v1
 kind: Target
 metadata:
@@ -19,7 +18,6 @@ description: Cloud Run development service
 run:
   location: projects/PROJECT_ID/locations/us-central1
 ---
-
 apiVersion: deploy.cloud.google.com/v1
 kind: Target
 metadata:
