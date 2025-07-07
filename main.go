@@ -21,7 +21,7 @@ var (
 
 func main() {
 	// Initialize template parameters.
-	service := os.Getenv("K_SERVICE")
+	// service := os.Getenv("K_SERVICE")
 	if service == "" {
 		service = "???"
 	}
